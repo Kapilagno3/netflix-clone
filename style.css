@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(netflixhero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2% 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: flex-start;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 50px 0;
+    /* position: fixed; */
+    top: 10px;
+    left: 10px;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.lang {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.headercontent {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.headercontent h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+.headercontent h3 {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.headercontent p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.headercontent form input {
+    width: 400px;
+    height: 50px;
+    background-color: rgba(54, 54, 54, 0.425);
+    color: #fff;
+    border-radius: 5px;
+    font-size: large;
+    border: none;
+    margin: 10px;
+}
+
+.headercontent form button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(237, 5, 5);
+    color: white;
+    border-radius: 5px;
+    font-size: large;
+    border: none;
+}
+
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content1 h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    padding: 100px;
+    padding-bottom: 0px;
+}
+
+.content1 h3 {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+    padding: 100px;
+    padding-top: 0;
+}
+
+hr {
+    height: 5px;
+    background-color: rgb(41, 40, 40);
+    border: none;
+}
+
+/* -----------FAQ--------- */
+.faq {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.faq a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.signin2 form input {
+    width: 400px;
+    height: 50px;
+    background-color: rgba(54, 54, 54, 0.425);
+    color: #fff;
+    border-radius: 5px;
+    font-size: large;
+    border: none;
+    margin: 10px;
+    padding: 20px;
+}
+
+.signin2 form button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(237, 5, 5);
+    color: white;
+    border-radius: 5px;
+    font-size: large;
+    border: none;
+}
+
+.signin2 p {
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.footer {
+    padding: 80px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: rgb(172, 172, 172);
+    padding: 10px;
+}
+
+.contactno {
+    padding: 80px;
+    padding-bottom: 20px;
+}
+
+.contactno p {
+    padding-left: 70px;
+    color: rgb(172, 172, 172);
+}
+
+.contactno a {
+    text-decoration: underline;
+    color: rgb(172, 172, 172);
+}
+
+.showoff {
+    padding: 80px;
+    padding-left: 150px;
+    color: rgb(172, 172, 172);
+}
