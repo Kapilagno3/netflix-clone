@@ -83,7 +83,7 @@ nav button {
 }
 
 .headercontent form input {
-    width: 400px;
+    width: 70%;
     height: 50px;
     background-color: rgba(54, 54, 54, 0.425);
     color: #fff;
@@ -94,7 +94,7 @@ nav button {
 }
 
 .headercontent form button {
-    width: 150px;
+    width: 20%;
     height: 50px;
     background-color: rgb(237, 5, 5);
     color: white;
@@ -290,5 +290,14 @@ input[type="radio"] {
 .showoff {
     padding: 80px;
     padding-left: 150px;
-    color: rgb(172, 172, 172);
+    color: rgb(172, 172, 172);    
+}
+@media (max-width:600px){
+.header{
+    width:300vw;
+}
+.faq ,.footer, hr{
+    width: 300%;
+}
+
 }
